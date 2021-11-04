@@ -6,4 +6,10 @@ export default {
   title: "Chakra/Button",
 };
 
-export const Success = () => <Button colorScheme="green">Success</Button>;
+export const Template = (args) => <Button {...args}>Click me!</Button>;
+
+export const Primary = Template.bind({});
+Primary.args = { bg: "primary.orange", color: "white" };
+
+export const PrimaryWide = Template.bind({});
+PrimaryWide.args = { ...Primary.args, px: "4em" };
