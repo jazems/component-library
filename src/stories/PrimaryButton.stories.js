@@ -3,7 +3,7 @@ import { Button } from "@chakra-ui/react";
 
 export default {
   component: Button,
-  title: "Chakra/Button",
+  title: "Chakra/PrimaryButton",
 };
 
 export const Template = (args) => <Button {...args}>Click me!</Button>;

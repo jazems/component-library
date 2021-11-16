@@ -1,5 +1,6 @@
 import "./App.css";
 import { Button } from "@chakra-ui/react";
+import Icon from "./components/Icon.js";
 
 function App() {
   return (
@@ -8,7 +9,6 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <Button bg="primary">Hello</Button>
         <a
           className="App-link"
           href="https://reactjs.org"
