@@ -23,7 +23,7 @@ Hint.args = {
 export const tag = (args) => <Tag {...args} />;
 
 tag.args = {
-  textColorUnselected: "#2B2541",
+  textColorUnselected: "primary.dark",
   tagColorUnselected: "#F5F5F5",
   textColorSelected: "white",
   tagColorSelected: "#FF9249",
@@ -35,9 +35,8 @@ export const iconTag = (args) => <Tag {...args} />;
 iconTag.args = {
   sourceUnselected: inkpen,
   sourceSelected: inkpen,
-  textColorUnselected: "#7C788A",
   tagColorUnselected: "white",
-  textColorSelected: "#7C788A",
+  textColorSelected: "primary.gray",
   tagColorSelected: "white",
   label: "Tag Name",
 };
@@ -45,10 +44,10 @@ iconTag.args = {
 export const Category = (args) => <Tag {...args} />;
 
 Category.args = {
-  textColor: "#7C788A",
-  tagColor: "white",
+  textColorUnselected: "primary.gray",
+  tagColorUnselected: "white",
   textColorSelected: "white",
-  tagColorSelected: "#FF7112",
+  tagColorSelected: "primary.orange",
   label: "Tag Name",
   isCategory: true,
 };
@@ -61,7 +60,7 @@ iconCategory.args = {
   textColorUnselected: "#7C788A",
   tagColorUnselected: "white",
   textColorSelected: "white",
-  tagColorSelected: "#FF7112",
+  tagColorSelected: "primary.orange",
   label: "Tag Name",
   isCategory: true,
 };
