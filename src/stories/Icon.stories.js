@@ -1,5 +1,7 @@
 import React from "react";
 import Icon from "../components/Icon";
+import whiteBulb from "../assets/hint.svg";
+import blackBulb from "../assets/bulb.png";
 
 export default {
   component: "Icon",
@@ -9,6 +11,15 @@ export default {
 export const icon = (args) => <Icon {...args} />;
 
 icon.args = {
-  source: "https://svgur.com/i/c4J.svg",
+  source: blackBulb,
   color: "#FF6600",
+  circle: false,
+};
+
+export const circleIcon = (args) => <Icon {...args} />;
+
+circleIcon.args = {
+  source: whiteBulb,
+  color: "#FF6600",
+  circle: true,
 };

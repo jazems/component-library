@@ -18,7 +18,7 @@ const IconButton = (props) => {
       onClick={handleClick}
       isActive={true}
     >
-      <Icon source={props.source} color={props.iconColor} />{" "}
+      <Icon circle={true} source={props.source} color={props.iconColor} />{" "}
     </Button>
   );
 
@@ -39,7 +39,7 @@ const IconButton = (props) => {
       }}
     >
       <HStack spacing="20px">
-        <Icon source={props.source} color={props.iconColor} />
+        <Icon circle={true} source={props.source} color={props.iconColor} />
         <Box>{props.label}</Box>
       </HStack>
     </Button>

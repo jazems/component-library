@@ -1,12 +1,21 @@
 import React from "react";
-import "./Icon.css";
+import "../styles/Icon.css";
 import { Image } from "@chakra-ui/react";
 
-const Icon = (props) => {
+const Icon = ({ color, source, circle }) => {
   return (
-    <div className="Icon" style={{ backgroundColor: props.color }}>
-      <Image p="8px" src={props.source} boxSize="40px" alt="" />
-    </div>
+    <>
+      {!circle && (
+        <div>
+          <Image p="8px" src={source} boxSize="35px" alt="" />
+        </div>
+      )}
+      {circle && (
+        <div className="Icon" style={{ backgroundColor: color }}>
+          <Image p="8px" src={source} boxSize="40px" alt="" />
+        </div>
+      )}
+    </>
   );
 };
 
